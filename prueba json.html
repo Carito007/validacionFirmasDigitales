@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALIDAR FIRMA DIGITAL</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <h1>VALIDACION DE FIRMAS DIGITALES</h1>
+    <div class="formul">
+        <form id="formulario">
+            <label for="nombre">Ingrese un nombre:</label>
+            <input type="text" id="nombre">
+            <div class="botones" id="botones">
+                <button onclick="enviarForm(event)">Buscar</button>
+                <button type="reset">Reset</button>  
+            </div>
+            
+        </form>
+
+        <div class="resultado">
+            <h3 id="result"></h3>
+        </div>
+    </div>
+
+    <div class="formul">
+        <form id="validacion">
+            <label for="validar">Ingrese un código de firma:</label>
+            <input type="text" id="validar">
+            <div class="botones" id="botones">
+                <button onclick="validarForm(event)">Validar</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <div class="resultado">
+            <h3 id="validado"></h3>
+        </div>    
+    </div>
+
+  
+
+    <script src="validacion.js"></script>
+    
+</body>
+</html>
